@@ -1,0 +1,16 @@
+uuid: 293f911d-2680-4cde-9498-dbddae3ccde2
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: oGfwb7n1Tmm4iGzVSabiN_bSnL920hIceFJSqHoSHtw
+id: user
+label: User
+type: 'canonical_entities:user'
+pattern: '/u/[user:account-name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

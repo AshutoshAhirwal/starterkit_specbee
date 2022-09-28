@@ -1,0 +1,15 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display an Accordion item paragraph item.
+ */
+#}
+
+{% block content %}
+  <h3 class="storm-accordion-label">
+    {{ content.field_accordion_label|field_value }}
+  </h3>
+  <div class="storm-accordion-pane-content">
+    {{ content|without('field_accordion_label') }}
+  </div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a accordion item field.
+ */
+#}
+
+{%
+  set classes = [
+  'field',
+  'field--storm-' ~ field_name|clean_class,
+  'field--type-' ~ field_type|clean_class,
+  'field--label-' ~ label_display,
+  label_display == 'inline' ? 'clearfix',
+]
+%}
+{%
+  set title_classes = [
+  'field__label',
+  label_display == 'visually_hidden' ? 'visually-hidden',
+]
+%}
+
+<div{{attributes.addClass(classes)}}>
+  {% if not label_hidden %}
+    <div{{title_attributes.addClass(title_classes)}}>{{ label }}</div>
+  {% endif %}
+  <div class="field__items">
+    {% for item in items %}
+      {{ item.content }}
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: cta_button
+block_id: 'inline_block:cta_button'
+category: component
+label: 'CTA Button'
+image_path: /profiles/contrib/storm/modules/storm_layout_builder/assets/cta.png
+image_alt: 'CTA Icon'
+weight: -100

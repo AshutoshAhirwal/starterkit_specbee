@@ -1,0 +1,65 @@
+blocks:
+  -
+    info: 'Card - INTEGRATE YOUR ECOMMERCE WEBSITE WITH THESE MUST-HAVE DRUPAL MODULE'
+    langcode: en
+    uuid: 2dd2b551-fcb7-4b69-84ae-d343c51428bd
+    bundle: card
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Experience the diffrence with Specbee! Read about the latest technologies, trends, application, integrations, and digital revolution across the globe. Stay connected with tech experts.</p>\r\n"
+          summary: ''
+          format: basic
+      field_image: {  }
+      field_image_alignment:
+        -
+          value: right
+      field_image_orientation:
+        -
+          target_id: '3'
+          alt: Image
+          title: ''
+          width: '612'
+          height: '408'
+      field_link:
+        -
+          uri: 'https://www.specbee.com/'
+          title: 'LEARN MORE'
+          options: {  }
+      field_title:
+        -
+          value: 'INTEGRATE YOUR ECOMMERCE WEBSITE WITH THESE MUST-HAVE DRUPAL MODULE'
+  -
+    info: 'Card - INTEGRATE YOUR ECOMMERCE WEBSITE WITH THESE MUST-HAVE DRUPAL MODULE'
+    langcode: en
+    uuid: 6af1fe0d-31ee-4d2a-9bbe-c277578231bf
+    bundle: card
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Experience the diffrence with Specbee! Read about the latest technologies, trends, application, integrations, and digital revolution across the globe. Stay connected with tech experts.</p>\r\n"
+          summary: ''
+          format: basic
+      field_image: {  }
+      field_image_alignment:
+        -
+          value: left
+      field_image_orientation:
+        -
+          target_id: '4'
+          alt: Image
+          title: ''
+          width: '508'
+          height: '339'
+      field_link:
+        -
+          uri: 'https://www.specbee.com/'
+          title: 'LEARN MORE'
+          options: {  }
+      field_title:
+        -
+          value: 'INTEGRATE YOUR ECOMMERCE WEBSITE WITH THESE MUST-HAVE DRUPAL MODULE'

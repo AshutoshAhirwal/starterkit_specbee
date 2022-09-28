@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.content_reference
+    - field.storage.block_content.field_display_mode
+  module:
+    - entity_reference_display
+id: block_content.content_reference.field_display_mode
+field_name: field_display_mode
+entity_type: block_content
+bundle: content_reference
+label: 'Display mode'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  exclude:
+    media_library: media_library
+    pdf: pdf
+    preview: preview
+    rss: rss
+    search_index: search_index
+    search_result: search_result
+    token: token
+  negate: 0
+field_type: entity_reference_display

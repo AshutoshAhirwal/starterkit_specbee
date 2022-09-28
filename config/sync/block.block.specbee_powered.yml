@@ -1,0 +1,22 @@
+uuid: a46b1cbd-df4d-444a-8a5c-51c0a3557056
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - specbee
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: specbee_powered
+theme: specbee
+region: footer_bottom
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

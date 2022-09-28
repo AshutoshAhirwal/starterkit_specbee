@@ -1,0 +1,13 @@
+uuid: 2954b496-a8d4-46fa-b5dd-d511438dc96f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XqDqrBik7G_iyy5YiWszDKPA_fvrWfxgbkT5Hpfa7nY
+id: content_reference
+block_id: 'inline_block:content_reference'
+category: component
+label: 'Content reference'
+weight: -100
+image_path: /profiles/contrib/storm/modules/storm_layout_builder/assets/default.png
+image_alt: 'Content reference Icon'

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: card
+label: Card
+revision: 0
+description: 'Use <em>card component</em> to display an internal content/information or external content.'

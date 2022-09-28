@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {}
+id: media
+block_id: "inline_block:media"
+category: component
+label: Media
+image_path: /profiles/contrib/storm/modules/storm_layout_builder/assets/media.png
+image_alt: "Media icon"
+weight: -1

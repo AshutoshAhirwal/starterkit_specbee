@@ -1,0 +1,5 @@
+global-styling:
+  css:
+    theme:
+      https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css: { type: external }
+      assets/css/style.css: {}

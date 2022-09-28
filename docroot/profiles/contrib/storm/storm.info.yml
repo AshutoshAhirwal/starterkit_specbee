@@ -1,0 +1,93 @@
+name: "Storm"
+type: profile
+description: "A base profile for Drupal 9 with rich features for faster development and head start."
+version: VERSION
+core_version_requirement: "^8.8 || ^9"
+package: Storm
+install:
+  # Core
+  - drupal:automated_cron
+  - drupal:big_pipe
+  - drupal:block
+  - drupal:block_content
+  - drupal:breakpoint
+  - drupal:ckeditor
+  - drupal:config
+  - drupal:content_moderation
+  - drupal:contextual
+  - drupal:datetime
+  - drupal:dblog
+  - drupal:dynamic_page_cache
+  - drupal:editor
+  - drupal:field
+  - drupal:field_ui
+  - drupal:file
+  - drupal:filter
+  - drupal:help
+  - drupal:history
+  - drupal:image
+  - drupal:inline_form_errors
+  - drupal:link
+  - drupal:menu_link_content
+  - drupal:menu_ui
+  - drupal:node
+  - drupal:options
+  - drupal:page_cache
+  - drupal:path
+  - drupal:rdf
+  - drupal:shortcut
+  - drupal:system
+  - drupal:taxonomy
+  - drupal:text
+  - drupal:toolbar
+  - drupal:user
+  - drupal:views
+  - drupal:views_ui
+  - drupal:workflows
+  # Contrib
+  - admin_toolbar:admin_toolbar
+  - admin_toolbar_tools:admin_toolbar_tools
+  - advagg:advagg
+  - auto_entitylabel:auto_entitylabel
+  - clientside_validation:clientside_validation
+  - entity_clone:entity_clone
+  - entity_embed:entity_embed
+  - field_group:field_group
+  - filefield_paths:filefield_paths
+  - gin_toolbar:gin_toolbar
+  - link_attributes:link_attributes
+  - linked_field:linked_field
+  - linkit:linkit
+  - token:token
+  - twig_tweak:twig_tweak
+  - twig_field_value:twig_field_value
+  # Storm
+  - storm_article:storm_article
+  - storm_blocks:storm_blocks
+  - storm_blocks:storm_block_accordion
+  - storm_blocks:storm_block_block_ref
+  - storm_blocks:storm_block_card
+  - storm_blocks:storm_block_content_ref
+  - storm_blocks:storm_block_cta_button
+  - storm_blocks:storm_block_media
+  - storm_blocks:storm_block_text
+  - storm_blocks:storm_block_view
+  - storm_blocks:storm_block_webform
+  - storm_content_types:storm_content_types
+  - storm_landing_page:storm_landing_page
+  - storm_layout_builder:storm_layout_builder
+  - storm_media:storm_media
+  - storm_page:storm_page
+  - storm_search:storm_search
+  - storm_security:storm_security
+  - storm_seo:storm_seo
+  - storm_webform:storm_webform
+
+themes:
+  - olivero
+  - gin
+
+distribution:
+  name: "Storm"
+project: "storm"
+core_incompatible: false

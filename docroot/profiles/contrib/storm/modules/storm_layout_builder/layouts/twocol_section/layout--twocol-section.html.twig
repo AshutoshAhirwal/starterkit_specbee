@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a two-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{# Set the title variables #}
+{% set title = content['#settings']['section_title']['heading'] %}
+{% set heading_style = content['#settings']['section_title']['heading_style'] %}
+
+{% if content.first or content.second %}
+  <div{{layout_container.attributes}}>
+    {% if title %}
+      <{{heading_style}} class="c-title c-title--{{ content['#settings']['section_title']['heading_alignment'] }}">
+        {{ title }}
+      </{{heading_style}}>
+    {% endif %}
+    <div{{attributes.addClass(class)}}>
+      {% if content.first %}
+        <div {{ region_attributes.first.addClass('l-grid__item', 'l-grid__item--first') }}>
+          {{ content.first }}
+        </div>
+      {% endif %}
+
+      {% if content.second %}
+        <div {{ region_attributes.second.addClass('l-grid__item', 'l-grid__item--second') }}>
+          {{ content.second }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

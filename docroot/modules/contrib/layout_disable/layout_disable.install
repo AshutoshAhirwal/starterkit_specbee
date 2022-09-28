@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * The layout_disable install file.
+ */
+
+/**
+ * Update to the new schema definition.
+ */
+function layout_disable_update_8001() {
+  $config_factory = \Drupal::configFactory();
+  $config = $config_factory->getEditable('layout_disable.settings');
+  $oldSettings = $config->get('layout_disable.settings.disabled_layouts');
+  $config->set('disabled_layouts', $oldSettings)
+  ->clear('layout_disable')
+  ->save();
+}

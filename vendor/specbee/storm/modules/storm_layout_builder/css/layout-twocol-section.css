@@ -1,0 +1,32 @@
+/**
+ * @file
+ * Stylesheet 2 column layout sections.
+ */
+
+@media screen and (min-width: 40em) {
+  .l-grid.l-grid--50-50 > .l-grid__item--first,
+  .l-grid.l-grid--50-50 > .l-grid__item--second {
+    flex: 0 1 calc(50% - 0.875em);
+  }
+
+  .l-grid.l-grid--67-33 > .l-grid__item--first,
+  .l-grid.l-grid--33-67 > .l-grid__item--second {
+    flex: 0 1 calc(67% - 0.875em);
+  }
+
+  .l-grid.l-grid--33-67 > .l-grid__item--first,
+  .l-grid.l-grid--67-33 > .l-grid__item--second {
+    flex: 0 1 calc(33% - 0.875em);
+  }
+
+  .l-grid.l-grid--75-25 > .l-grid__item--first,
+  .l-grid.l-grid--25-75 > .l-grid__item--second {
+    flex: 0 1 calc(75% - 0.875em);
+  }
+
+  .l-grid.l-grid--25-75 > .l-grid__item--first,
+  .l-grid.l-grid--75-25 > .l-grid__item--second {
+    flex: 0 1 calc(25% - 0.875em);
+  }
+}
+

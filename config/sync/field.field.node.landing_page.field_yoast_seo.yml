@@ -1,0 +1,29 @@
+uuid: 27954c31-cc3a-42d3-85e8-0ae242d0f408
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
+    - node.type.landing_page
+  module:
+    - yoast_seo
+_core:
+  default_config_hash: fsl1gOXwx3efxPihvRW4anMOVMhL8rqIVspx3sh1l0o
+id: node.landing_page.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+bundle: landing_page
+label: 'Real-time SEO'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    yoast_seo:
+      focus_keyword: ''
+      status: ''
+    status: ''
+    focus_keyword: ''
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

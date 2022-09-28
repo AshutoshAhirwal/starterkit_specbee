@@ -1,0 +1,19 @@
+name: Storm layout builder
+type: module
+description: "Enhances the Drupal Layout Builder."
+version: VERSION
+core_version_requirement: ^8.8 || ^9
+package: Storm
+dependencies:
+  - drupal:layout_builder
+  - drupal:layout_discovery
+  - gin_lb:gin_lb
+  - inline_block_title_automatic:inline_block_title_automatic
+  - layout_builder_browser:layout_builder_browser
+  - layout_builder_modal:layout_builder_modal
+  - layout_builder_operation_link:layout_builder_operation_link
+  - layout_builder_restrictions:layout_builder_restrictions
+  - layout_disable:layout_disable
+  - layout_library:layout_library
+  - media_library_form_element:media_library_form_element
+

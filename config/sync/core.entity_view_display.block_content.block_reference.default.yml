@@ -1,0 +1,28 @@
+uuid: 6206763e-54b9-4c8c-b17d-f947621ebd90
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_reference
+    - field.field.block_content.block_reference.field_block_reference
+  module:
+    - block_field
+_core:
+  default_config_hash: UEzFP8TSUfVws2vw98Ddx5WjpY_bcKZWqFA3p7sGGnM
+id: block_content.block_reference.default
+targetEntityType: block_content
+bundle: block_reference
+mode: default
+content:
+  field_block_reference:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  search_api_excerpt: true

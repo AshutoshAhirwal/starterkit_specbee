@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Category
+vid: category
+description: 'Use <em>Category</em> to group similar contents under a particular topic using.'
+weight: 0

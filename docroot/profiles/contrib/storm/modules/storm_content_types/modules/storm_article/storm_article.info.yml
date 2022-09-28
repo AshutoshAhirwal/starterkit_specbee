@@ -1,0 +1,9 @@
+name: Storm Article
+type: module
+description: "Provides Article content type."
+version: VERSION
+core_version_requirement: ^8.8 || ^9
+package: Storm
+dependencies:
+  - storm:storm_content_types
+  - autocomplete_deluxe:autocomplete_deluxe

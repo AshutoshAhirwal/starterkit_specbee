@@ -1,0 +1,16 @@
+name: Storm Webform
+type: module
+description: "Provides Webform integration & support."
+version: VERSION
+core_version_requirement: ^8.8 || ^9
+package: Storm
+dependencies:
+  - webform:webform
+  - webform:webform_clientside_validation
+  - webform:webform_entity_print
+  - webform:webform_image_select
+  - webform:webform_shortcuts
+  - webform:webform_submission_export_import
+  - webform:webform_submission_log
+  - webform:webform_ui
+  - webform_views:webform_views

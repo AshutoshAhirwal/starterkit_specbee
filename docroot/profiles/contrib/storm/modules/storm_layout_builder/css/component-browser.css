@@ -1,0 +1,33 @@
+.storm-component-browser {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 36px 0;
+}
+
+.storm-component-browser > a {
+  position: relative;
+  display: inline-block;
+  width: calc(33% - 15px);
+  margin: 8px !important;
+  padding: 20px 20px 20px 60px;
+  text-align: left;
+  text-decoration: none;
+  color: #1b1b1d !important;
+  border: 1px solid #1b1b1d;
+  border-radius: 0;
+  font-weight: 500;
+}
+
+.storm-component-browser > a:hover,
+.storm-component-browser > a:focus {
+  background: rgb(27 27 27 / 5%) !important;
+}
+
+.storm-component-browser > a > img {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  width: 32px;
+  height: 32px;
+  transform: translateY(-50%);
+}

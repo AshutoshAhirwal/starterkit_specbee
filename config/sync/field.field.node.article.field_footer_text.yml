@@ -1,0 +1,23 @@
+uuid: 173489c4-0f67-46cd-ba73-c2da3f00760a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_footer_text
+    - node.type.article
+  module:
+    - text
+_core:
+  default_config_hash: fdO_mWBYvYszr4OAMAH7YleS-2ZGtuvcr_mMMEC6ycY
+id: node.article.field_footer_text
+field_name: field_footer_text
+entity_type: node
+bundle: article
+label: 'Footer text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

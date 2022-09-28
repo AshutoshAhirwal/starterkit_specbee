@@ -1,0 +1,10 @@
+uuid: 6d845c4c-57cc-46db-9336-d0b98105f10f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6WgHgCvRnVEcWeeED4O8yhPWAleQvn7jhnJOrkTEb5I
+id: list_views
+label: 'List - Views'
+revision: 0
+description: 'Provides a reference field to a View which will render a list of contents.'

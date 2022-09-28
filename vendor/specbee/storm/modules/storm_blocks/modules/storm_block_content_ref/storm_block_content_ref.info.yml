@@ -1,0 +1,10 @@
+name: 'Storm block - Content reference'
+description: 'Use Content reference to attach/embed a piece of content rendered with view mode on a page.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - storm_content_types:storm_article
+  - storm_content_types:storm_landing_page
+  - storm_content_types:storm_page
+  - storm_blocks:storm_blocks
+  - entity_reference_display:entity_reference_display

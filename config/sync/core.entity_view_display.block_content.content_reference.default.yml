@@ -1,0 +1,33 @@
+uuid: 905c854a-cd40-4b8c-940c-daf369e3bd92
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.content_reference
+    - field.field.block_content.content_reference.field_content_reference
+    - field.field.block_content.content_reference.field_display_mode
+  module:
+    - entity_reference_display
+_core:
+  default_config_hash: r02h9xmX4G9TjgZj0DtLc5fIfF5w1V2JXhfAzBkj39w
+id: block_content.content_reference.default
+targetEntityType: block_content
+bundle: content_reference
+mode: default
+content:
+  field_content_reference:
+    type: entity_reference_display_default
+    label: hidden
+    settings:
+      link: true
+      display_field: null
+      view_mode: default
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_display_mode: true
+  search_api_excerpt: true

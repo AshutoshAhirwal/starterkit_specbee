@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta_button
+    - field.field.block_content.cta_button.field_cta_button_type
+    - field.field.block_content.cta_button.field_cta_link
+  module:
+    - link_attributes
+id: block_content.cta_button.default
+targetEntityType: block_content
+bundle: cta_button
+mode: default
+content:
+  field_cta_button_type:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_cta_link:
+    type: link_attributes
+    weight: 0
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        target: true
+        rel: true
+        class: true
+        id: false
+        name: false
+        accesskey: false
+        aria-label: false
+        title: false
+    third_party_settings: {  }
+hidden:
+  info: true

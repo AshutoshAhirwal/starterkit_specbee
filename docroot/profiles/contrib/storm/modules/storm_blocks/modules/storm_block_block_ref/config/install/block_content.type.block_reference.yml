@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: block_reference
+label: 'Block reference'
+revision: 0
+description: 'Use <em>Block reference</em> to add a block on a page via Layout Builder.'

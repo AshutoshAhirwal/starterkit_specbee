@@ -1,0 +1,12 @@
+name: 'Layout Disable'
+type: module
+description: Provides an user interface to disable unwanted core or contrib layouts.
+core_version_requirement: ^8.8 || ^9
+package: Layout
+dependencies:
+  - drupal:layout_discovery
+
+# Information added by Drupal.org packaging script on 2022-03-15
+version: '8.x-1.7'
+project: 'layout_disable'
+datestamp: 1647364769

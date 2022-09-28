@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {}
+id: list_views
+block_id: "inline_block:list_views"
+category: component
+label: "List - Views"
+image_path: /profiles/contrib/storm/modules/storm_layout_builder/assets/views.png
+image_alt: "View reference icon"
+weight: 1

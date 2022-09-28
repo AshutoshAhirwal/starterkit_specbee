@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: media
+label: Media
+revision: 0
+description: 'Use <em>Media</em> to create a component with Image and Video media entities'

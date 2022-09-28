@@ -1,0 +1,8 @@
+name: 'Storm block - Webform'
+description: 'Provides a Webform block type to attach a Webform as a block on a page.'
+type: module
+package: Storm
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - storm_blocks:storm_blocks
+  - storm_webform:storm_webform

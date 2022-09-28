@@ -1,0 +1,88 @@
+<?php
+
+/**
+ * @file
+ * Layout builder customizations by Storm.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Template\Attribute;
+use Drupal\file\Entity\File;
+use Drupal\media\Entity\Media;
+
+/**
+ * Implements hook_plugin_filter_TYPE__CONSUMER_alter().
+ */
+function storm_layout_builder_plugin_filter_layout__layout_builder_alter(array &$definitions, array $extra) {
+  unset($definitions['layout_onecol']);
+}
+
+/**
+ * Implements hook_preprocess_layout().
+ */
+function storm_layout_builder_preprocess_layout(&$variables) {
+  // Build the Layout container class.
+  switch ($variables['content']['#layout']->id()) {
+    case 'storm_layout_onecol':
+      $layout_modifier = 'l-container--onecol';
+      break;
+
+    case 'storm_layout_twocol_section':
+      $layout_modifier = 'l-container--twocol';
+      break;
+
+    case 'storm_layout_threecol_section':
+      $layout_modifier = 'l-container--threecol';
+      break;
+
+    case 'storm_layout_fourcol_section':
+      $layout_modifier = 'l-container--fourcol';
+      break;
+  }
+
+  $class = [
+    'l-container',
+    $layout_modifier ?? NULL,
+  ];
+
+  if ($variables['settings'] && (isset($variables['settings']['section_background']) || isset($variables['settings']['section_padding']) || isset($variables['settings']['section_spacing']) || isset($variables['settings']['section_theme']['styles']))) {
+    // Merge all modifier classes.
+    $class = array_merge($class, [$variables['settings']['section_background']['background_color']], $variables['settings']['section_padding'], $variables['settings']['section_spacing'], $variables['settings']['section_theme']['styles']);
+    // Filter out any none values.
+    $class = array_filter($class, fn ($m) => $m != 'none');
+  }
+
+  $media = $variables['settings']['section_background']['background_media'] ?? NULL;
+  $position = $variables['settings']['section_background']['background_position'] ?? NULL;
+  $size = $variables['settings']['section_background']['background_size'] ?? NULL;
+  $repeat = $variables['settings']['section_background']['background_repeat'] ?? NULL;
+
+  if ($media) {
+    $entity = Media::load($media);
+    if ($entity) {
+      $fid = $entity->getSource()->getSourceFieldValue($entity);
+      $file = File::load($fid);
+      $url = $file->createFileUrl();
+      $background_media = [
+        'background-image: url(' . $url . ');',
+        'background-position: ' . $position . ';',
+        'background-size: ' . $size . ';',
+        'background-repeat: ' . $repeat . ';',
+      ];
+
+    }
+  }
+
+  $variables['layout_container']['attributes'] = new Attribute([
+    'class' => $class,
+    'style' => $background_media ?? NULL,
+  ]);
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function storm_layout_builder_form_layout_builder_browser_block_add_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['image_path']['#required'] = TRUE;
+  $form['image_path']['#default_value'] = '/profiles/contrib/storm/modules/storm_layout_builder/assets/default.png';
+}

@@ -1,0 +1,10 @@
+uuid: 8b17828e-fd8d-42dd-b959-aaf0d0ed4398
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-OEk8qjWMWuOkQPWpNWxwSMwMguf-7SxrLRbvWbgT8s'
+id: block_reference
+label: 'Block reference'
+revision: 0
+description: 'Use <em>Block reference</em> to add a block on a page via Layout Builder.'

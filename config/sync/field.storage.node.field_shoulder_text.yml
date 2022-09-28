@@ -1,0 +1,21 @@
+uuid: 020201c3-a07c-4cd6-a946-d1ae2b96168e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: _ZDa1Pm0-c4p9hyTcMqj0ryDuNv0jDcvpFUQ3thanG0
+id: node.field_shoulder_text
+field_name: field_shoulder_text
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

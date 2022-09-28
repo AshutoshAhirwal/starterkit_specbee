@@ -1,0 +1,10 @@
+uuid: 501df262-8091-44b2-accf-196c12bffbab
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: RT9gZh8G2QUILwpcZ2fWu6B_kkrzZg4FOfCd7IlfAfc
+id: storm_short_date
+label: 'Storm short date'
+locked: false
+pattern: 'm/d/Y - H:i'

@@ -1,0 +1,8 @@
+name: Storm block - Text
+type: module
+description: Provides a basic text block type.
+package: Storm
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - storm_blocks:storm_blocks

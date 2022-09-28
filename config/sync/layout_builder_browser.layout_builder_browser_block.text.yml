@@ -1,0 +1,13 @@
+uuid: acc06f4b-9418-41b8-be02-11b3310540ca
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: QPlEIOhCi8sDgJXQQ0hqYFElLPfSC0312Qd6rZ0uXUc
+id: text
+block_id: 'inline_block:text'
+category: component
+label: Text
+weight: -100
+image_path: /profiles/contrib/storm/modules/storm_layout_builder/assets/text.png
+image_alt: 'Text icon'

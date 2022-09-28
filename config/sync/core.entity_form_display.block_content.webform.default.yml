@@ -1,0 +1,26 @@
+uuid: 7ff53f2d-8351-4a5d-84b1-6137400eff0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.webform
+    - field.field.block_content.webform.field_webform_form
+  module:
+    - webform
+_core:
+  default_config_hash: 06NQe3vGbi0aty3r5rsd1JO6ryp6pXOV4hTii56zJmY
+id: block_content.webform.default
+targetEntityType: block_content
+bundle: webform
+mode: default
+content:
+  field_webform_form:
+    type: webform_entity_reference_select
+    weight: 0
+    region: content
+    settings:
+      default_data: false
+      webforms: {  }
+    third_party_settings: {  }
+hidden:
+  info: true

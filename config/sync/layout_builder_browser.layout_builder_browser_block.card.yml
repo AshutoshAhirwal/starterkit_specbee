@@ -1,0 +1,13 @@
+uuid: 67366907-4c28-4588-9ac8-894ba5ebb372
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: uQ2hVK8fxqzikkwzQxwculFUjoxc4refTO1Tuj0y020
+id: card
+block_id: 'inline_block:card'
+category: component
+label: Card
+weight: -100
+image_path: /profiles/contrib/storm/modules/storm_layout_builder/assets/card.png
+image_alt: 'Card icon'

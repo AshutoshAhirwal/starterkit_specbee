@@ -1,0 +1,24 @@
+uuid: a0702240-2b94-43b3-b436-f050578f0ac5
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: bcHFX_BQM1yljxP7PveqH6a4GpeNdHdWmi9r-Hr_nNI
+id: media_images
+label: 'Media - Images'
+type: 'canonical_entities:media'
+pattern: '/media/image/[media:name]'
+selection_criteria:
+  51dd3020-0f1b-4a45-b439-8f6d22609fcf:
+    id: 'entity_bundle:media'
+    negate: false
+    uuid: 51dd3020-0f1b-4a45-b439-8f6d22609fcf
+    context_mapping:
+      media: media
+    bundles:
+      image: image
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,50 @@
+name: specbee_new
+recipe: drupal9
+config:
+  webroot: docroot
+  php: '8.0'
+  database: mysql:8.0
+  xdebug: false
+  drush: '*'
+  via: nginx
+services:
+  appserver:
+    build_as_root:
+      - curl -sL https://deb.nodesource.com/setup_14.x | bash -
+      - apt-get install -qq -y nodejs > /dev/null
+      - npm install -g gulp-cli > "/dev/null" 2>&1
+      - npm install -g yarn > "/dev/null" 2>&1
+    environment:
+      DRUSH_OPTIONS_ROOT: /app/docroot
+      DRUSH_OPTIONS_URI: specbee.lndo.site
+  chromedriver:
+    type: compose
+    services:
+      image: robcherry/docker-chromedriver:latest
+      expose:
+        - "4444"
+      environment:
+        CHROMEDRIVER_WHITELISTED_IPS: ""
+        CHROMEDRIVER_URL_BASE: "/wd/hub"
+      security_opt:
+        - seccomp:unconfined
+      command: ["/usr/local/bin/supervisord", "-c", "/etc/supervisord.conf"]
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+    portforward: true
+  database:
+    creds:
+      user: drupal
+      password: drupal
+      database: drupal
+tooling:
+  chromedriver:
+    service: chromedriver
+    description: "Run chromedriver commands."
+  robo:
+    service: appserver
+    description: "Run robo tooling commands"
+    cmd:
+      - /app/vendor/bin/robo

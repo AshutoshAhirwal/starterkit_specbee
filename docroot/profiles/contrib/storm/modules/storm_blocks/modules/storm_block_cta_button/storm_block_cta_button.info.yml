@@ -1,0 +1,7 @@
+name: 'Storm block - CTA Button'
+description: 'Provides a CTA Button to directs your visitors to do something specific'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - storm_blocks:storm_blocks
+  - link_attributes:link_attributes

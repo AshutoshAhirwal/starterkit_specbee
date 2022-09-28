@@ -1,0 +1,11 @@
+_core:
+  default_config_hash: OVnm6gsQ7K8nvEY4b-pYmecVqOiJz1sxha-2ialm_MI
+status: 1
+pattern: 'Card - [block_content:field_title]'
+escape: false
+preserve_titles: false
+save: 0
+chunk: '50'
+dependencies:
+  config:
+    - block_content.type.card

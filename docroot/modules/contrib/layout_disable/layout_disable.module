@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * The layout disable module file.
+ */
+
+/**
+ * Implements hook_layout_alter().
+ */
+function layout_disable_layout_alter(&$definitions) {
+  $config = \Drupal::config('layout_disable.settings');
+  $disabledLayouts = $config->get('disabled_layouts');
+  if (!empty($disabledLayouts)) {
+    foreach ($disabledLayouts as $disabledLayout) {
+      if (isset($definitions[$disabledLayout])) {
+        unset($definitions[$disabledLayout]);
+      }
+    }
+  }
+}

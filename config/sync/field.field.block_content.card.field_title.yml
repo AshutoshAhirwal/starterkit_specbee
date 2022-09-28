@@ -1,0 +1,21 @@
+uuid: 805dabde-7588-47af-b612-b90b58d77b5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card
+    - field.storage.block_content.field_title
+_core:
+  default_config_hash: 1o6y3-cRHArX6A4xQBwHBQUA6gl1tnBBRItynTkx6SQ
+id: block_content.card.field_title
+field_name: field_title
+entity_type: block_content
+bundle: card
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

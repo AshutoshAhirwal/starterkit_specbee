@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: list_views
+label: 'List - Views'
+revision: 0
+description: 'Provides a reference field to a View which will render a list of contents.'

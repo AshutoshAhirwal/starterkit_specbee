@@ -1,0 +1,10 @@
+uuid: a7c4ba85-a083-4589-9f82-256041a501d8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zCKnzFFR0J17aMgI7gbwNphYkd6PxOPpa94E0lrW6c4
+id: content_reference
+label: 'Content reference'
+revision: 0
+description: 'Use <em>Content reference</em> to attach/embed a piece of content rendered with view mode on a page.'

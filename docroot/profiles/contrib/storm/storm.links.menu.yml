@@ -1,0 +1,17 @@
+storm.settings:
+  title: Storm settings
+  parent: system.admin_config_system
+  description: "Configure various settings of Storm system."
+  route_name: storm.settings
+
+storm.layout_builder.style_settings:
+  title: Layout builder styles
+  description: Configure styles for Storm Layout builder
+  route_name: storm.layout_builder.style_settings
+  parent: storm.settings
+
+storm.cta_button.types:
+  title: CTA Button Types
+  description: Configure the CTA button types to be used in CTA Button component.
+  route_name: storm.cta_button.types
+  parent: storm.settings

@@ -1,0 +1,49 @@
+uuid: 0cfe5a37-40b0-4aff-a62a-0dcf0fa3b2ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.list_views
+    - field.field.block_content.list_views.body
+    - field.field.block_content.list_views.field_title
+    - field.field.block_content.list_views.field_view
+  module:
+    - text
+    - viewsreference
+_core:
+  default_config_hash: 0rmt_ZyVnAoNHrQ2CYwwykjl2BrJTw2v0vsfWahHF1A
+id: block_content.list_views.default
+targetEntityType: block_content
+bundle: list_views
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_view:
+    type: viewsreference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  info: true

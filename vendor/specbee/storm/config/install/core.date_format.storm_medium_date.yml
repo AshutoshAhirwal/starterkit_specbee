@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: storm_medium_date
+label: 'Storm medium date'
+locked: false
+pattern: 'd M, Y h:i A'

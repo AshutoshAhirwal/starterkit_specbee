@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: term_tags_media
+label: 'Term - Tags Media'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/tag/media/[term:name]'
+selection_criteria:
+  328005f9-0a8a-4558-ab62-98c58386afd2:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 328005f9-0a8a-4558-ab62-98c58386afd2
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      tags_media: tags_media
+selection_logic: and
+weight: -5
+relationships: {  }

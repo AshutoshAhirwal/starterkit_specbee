@@ -1,0 +1,23 @@
+#
+# A minimalist Drush site alias file.
+# See https://www.drush.org/latest/site-aliases/ for lots more documentation.
+#
+# File: self.site.yml
+
+dev:
+  uri: ""
+  host: ""
+  options: {  }
+  root: ""
+  user: ""
+  ssh: { options: '-p 22' }
+  command:
+    sql:
+      sync:
+        options:
+          no-dump: true
+    rsync:
+        options:
+          mode: rlptz
+          exclude-paths: 'css:imagecache:ctools:js:tmp:php:styles'
+

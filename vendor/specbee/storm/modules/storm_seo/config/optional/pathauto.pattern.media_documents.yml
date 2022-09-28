@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media_documents
+label: 'Media - Documents'
+type: 'canonical_entities:media'
+pattern: '/media/document/[media:name]'
+selection_criteria:
+  55007073-83a0-49f5-9b9d-5883bc69e9c0:
+    id: 'entity_bundle:media'
+    negate: false
+    uuid: 55007073-83a0-49f5-9b9d-5883bc69e9c0
+    context_mapping:
+      media: media
+    bundles:
+      document: document
+selection_logic: and
+weight: -5
+relationships: {  }

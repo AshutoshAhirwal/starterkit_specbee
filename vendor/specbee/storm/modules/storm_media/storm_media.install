@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Install and update hooks for storm_media.
+ */
+
+use Specbee\Storm\StormConfigOverwrite;
+
+/**
+ * Implements hook_install().
+ */
+function storm_media_install() {
+  // Prepare the new config path.
+  $config_path = drupal_get_path('module', 'storm_media') . '/config/overwrite/lazy.settings.yml';
+
+  StormConfigOverwrite::alter($config_path, 'lazy.settings');
+}

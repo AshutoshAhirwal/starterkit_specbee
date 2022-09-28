@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: storm_default_date_format
+label: 'Storm default date format'
+locked: false
+pattern: 'd F, Y'

@@ -1,0 +1,13 @@
+uuid: a98d959c-1107-4e7d-b5e2-cb2a7fedfe69
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: HmT_13rbY9m1RQWWF2x9X8hN9mSbVYBglv99b0i2_xM
+id: webform
+block_id: 'inline_block:webform'
+category: component
+label: Webform
+weight: -100
+image_path: /profiles/contrib/storm/modules/storm_layout_builder/assets/form.png
+image_alt: 'Webform Icon'

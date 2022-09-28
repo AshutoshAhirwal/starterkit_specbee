@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {}
+id: accordion
+block_id: "inline_block:accordion"
+category: component
+label: Accordion
+image_path: /profiles/contrib/storm/modules/storm_layout_builder/assets/accordion.png
+image_alt: "Accordion Icon"
+weight: -2

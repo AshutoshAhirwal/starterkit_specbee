@@ -1,0 +1,32 @@
+.node__content{
+    background-color: #fff;
+}
+.content{
+    margin-top: 30px;
+}
+.content h2{
+    color: #4657d0;
+    font-weight: 600;
+    font-size: 22px;
+}
+.content p{
+    color: #000;
+    font-size: 13px;
+}
+.content a{
+    position: relative;
+    text-decoration: none;
+    padding-left: 25px;
+    color: #000;
+    font-weight: 600;
+}
+.content a::before{
+    content: "";
+	height: 0.188rem;
+	background: rgb(220, 237, 31);
+	position: absolute;
+	width: 20px;
+	margin: 0 auto;
+    left: 0;
+    top: 50%;
+}

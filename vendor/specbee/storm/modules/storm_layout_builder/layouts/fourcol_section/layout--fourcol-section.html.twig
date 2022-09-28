@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a four-column 25%-25%-25%-25% layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{# Set the title variables #}
+{% set title = content['#settings']['section_title']['heading'] %}
+{% set heading_style = content['#settings']['section_title']['heading_style'] %}
+
+{% if content.first or content.second or content.third or content.fourth %}
+  <div{{layout_container.attributes}}>
+    {% if title %}
+      <{{heading_style}} class="c-title c-title--{{ content['#settings']['section_title']['heading_alignment'] }}">
+        {{ title }}
+      </{{heading_style}}>
+    {% endif %}
+    <div class='l-grid l-grid--content'>
+      {% if content.first %}
+        <div {{ region_attributes.first.addClass('l-grid__item', 'l-grid__item--first') }}>
+          {{ content.first }}
+        </div>
+      {% endif %}
+
+      {% if content.second %}
+        <div {{ region_attributes.second.addClass('l-grid__item', 'l-grid__item--second') }}>
+          {{ content.second }}
+        </div>
+      {% endif %}
+
+      {% if content.third %}
+        <div {{ region_attributes.third.addClass('l-grid__item', 'l-grid__item--third') }}>
+          {{ content.third }}
+        </div>
+      {% endif %}
+
+      {% if content.fourth %}
+        <div {{ region_attributes.fourth.addClass('l-grid__item', 'l-grid__item--fourth') }}>
+          {{ content.fourth }}
+        </div>
+      {% endif %}
+
+    </div>
+  </div>
+{% endif %}

@@ -1,0 +1,7 @@
+name: 'Storm block - Block reference'
+description: 'Provides a Block reference component to add Block plugins on a page via Layout Builder.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - storm_blocks:storm_blocks
+  - block_field:block_field

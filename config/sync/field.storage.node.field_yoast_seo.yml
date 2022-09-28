@@ -1,0 +1,21 @@
+uuid: 937d8213-12e5-422e-ac01-c7fc67138fae
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - yoast_seo
+_core:
+  default_config_hash: 89kqUDkgBw3S-dK6XMYe1MgJHI7yNpGgvbp3cvqHDDM
+id: node.field_yoast_seo
+field_name: field_yoast_seo
+entity_type: node
+type: yoast_seo
+settings: {  }
+module: yoast_seo
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

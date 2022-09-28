@@ -1,0 +1,25 @@
+uuid: 1c3dd3e5-e444-4818-a66b-204cddd42a5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text
+    - field.storage.block_content.field_link
+  module:
+    - link
+_core:
+  default_config_hash: ORAaVfVCjg47Qv8j2duHu4s7vv2Bflsm5zAeBP9s6QE
+id: block_content.text.field_link
+field_name: field_link
+entity_type: block_content
+bundle: text
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

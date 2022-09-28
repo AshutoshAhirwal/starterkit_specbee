@@ -1,0 +1,12 @@
+name: Storm blocks
+type: module
+description: Provides basic block types required for page building.
+package: Storm
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - storm:storm_media
+  - drupal:block_content
+  - drupal:link
+  - auto_entitylabel:auto_entitylabel
+  - inline_block_title_automatic:inline_block_title_automatic

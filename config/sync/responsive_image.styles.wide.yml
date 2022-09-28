@@ -1,0 +1,18 @@
+uuid: 6195e791-4414-41eb-9745-eb0969e777da
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.wide
+_core:
+  default_config_hash: '-IJ7UFI4M1VPPiZLADvG2tJAuxSVUyLq8qevZxPpnok'
+id: wide
+label: Wide
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: wide
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: wide

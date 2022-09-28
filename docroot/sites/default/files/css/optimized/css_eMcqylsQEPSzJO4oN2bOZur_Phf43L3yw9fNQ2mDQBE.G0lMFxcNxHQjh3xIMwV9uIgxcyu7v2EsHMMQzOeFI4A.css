@@ -1,0 +1,15 @@
+.l-container .l-grid--content{
+    background-color: #fff;
+}
+.content{
+    margin-top: 25px;
+}
+.content h2{
+    color: #4657d0;
+    font-weight: 600;
+    font-size: 22px;
+}
+.content p{
+    color: #000;
+    font-size: 15px;
+}

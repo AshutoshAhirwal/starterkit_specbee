@@ -1,0 +1,28 @@
+uuid: ce0a1c94-02c4-4870-ab79-e7ea7f91707a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.media
+    - field.field.block_content.media.field_media
+_core:
+  default_config_hash: kaxQn-15nLs6qw263vwBdyLL8Kl_xT10lNyyDr6GkUw
+id: block_content.media.default
+targetEntityType: block_content
+bundle: media
+mode: default
+content:
+  field_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  search_api_excerpt: true

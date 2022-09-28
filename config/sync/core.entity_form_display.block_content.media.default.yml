@@ -1,0 +1,25 @@
+uuid: da22c2b6-861c-45b6-8585-a444daf8bdf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.media
+    - field.field.block_content.media.field_media
+  module:
+    - media_library
+_core:
+  default_config_hash: iwVuzD_0DmNAZ8Z-BrS9e031ZgYS6Qg6wMMFhHHgM2k
+id: block_content.media.default
+targetEntityType: block_content
+bundle: media
+mode: default
+content:
+  field_media:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  info: true

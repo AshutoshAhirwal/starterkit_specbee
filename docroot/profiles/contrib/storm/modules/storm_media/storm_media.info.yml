@@ -1,0 +1,12 @@
+name: Storm Media
+type: module
+description: "Provides Media bundles and enhancements."
+version: VERSION
+core_version_requirement: ^8.8 || ^9
+package: Storm
+dependencies:
+  - drupal:media
+  - drupal:media_library
+  - drupal:responsive_image
+  - lazy:lazy
+  - webp:webp

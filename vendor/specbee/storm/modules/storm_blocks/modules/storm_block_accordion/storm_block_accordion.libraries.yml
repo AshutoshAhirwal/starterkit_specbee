@@ -1,0 +1,9 @@
+accordion:
+  js:
+    dist/js/accordion.js: {}
+  css:
+    component:
+      dist/css/accordion.css: {}
+  dependencies:
+    - core/jquery
+    - jquery_ui_accordion/accordion

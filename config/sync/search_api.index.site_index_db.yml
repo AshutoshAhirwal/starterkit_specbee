@@ -1,0 +1,46 @@
+uuid: 28dc8874-3693-4205-ba90-8f7b6aa1a812
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.server.storm_search_db
+  module:
+    - node
+    - search_api
+_core:
+  default_config_hash: FIfa0dCxAknzmfoFaHvFVTfyNXy5JraHTAchyTIE_3E
+id: site_index_db
+name: 'Site index'
+description: 'A global index to index all nodes to the DB search server.'
+read_only: false
+field_settings:
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: storm_search_db

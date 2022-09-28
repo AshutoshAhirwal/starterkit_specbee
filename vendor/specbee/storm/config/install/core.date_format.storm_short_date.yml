@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: storm_short_date
+label: 'Storm short date'
+locked: false
+pattern: 'm/d/Y - H:i'

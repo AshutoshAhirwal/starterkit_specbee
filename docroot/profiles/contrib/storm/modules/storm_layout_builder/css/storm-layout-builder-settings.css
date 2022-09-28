@@ -1,0 +1,33 @@
+/* Form elements overrides */
+
+.form-item-layout-settings-section-background-background-color {
+  display: inline-block !important;
+  margin-right: 5px;
+}
+
+.form-item-layout-settings-section-background-background-color .glb-form-boolean {
+  display: none;
+}
+
+.form-item-layout-settings-section-background-background-color .glb-form-item__label.glb-option {
+  width: 46px;
+  height: 46px;
+  border: 1px dotted #ccc;
+  display: inline-block !important;
+  padding: 0;
+}
+
+.form-item-layout-settings-section-background-background-color .glb-form-boolean:checked + .glb-form-item__label.glb-option span {
+  background: url("../assets/check.png") no-repeat center center;
+}
+
+.form-item-layout-settings-section-background-background-color .slb-bg-none,
+.form-item-layout-settings-section-background-background-color .glb-form-boolean:checked + .glb-form-item__label.glb-option span.slb-bg-none {
+  background: url("../assets/cancel.png") no-repeat center center !important;
+}
+
+.form-item-layout-settings-section-background-background-color .glb-form-item__label.glb-option span {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

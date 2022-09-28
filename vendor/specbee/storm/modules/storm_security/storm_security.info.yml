@@ -1,0 +1,12 @@
+name: Storm security
+type: module
+description: "Provides security enhancements."
+version: VERSION
+core_version_requirement: ^8.8 || ^9
+package: Storm
+dependencies:
+  - password_policy:password_policy
+  - username_enumeration_prevention:username_enumeration_prevention
+  - flood_control:flood_control
+  - seckit:seckit
+  - recaptcha:recaptcha

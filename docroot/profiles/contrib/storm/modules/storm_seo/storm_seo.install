@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Install and update hooks for storm_seo.
+ */
+
+use Specbee\Storm\StormConfigOverwrite;
+
+/**
+ * Implements hook_install().
+ */
+function storm_seo_install() {
+  // Prepare the new config path.
+  $config_path = drupal_get_path('module', 'storm_seo') . '/config/overwrite/linkchecker.settings.yml';
+
+  StormConfigOverwrite::alter($config_path, 'linkchecker.settings');
+}

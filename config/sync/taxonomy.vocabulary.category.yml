@@ -1,0 +1,10 @@
+uuid: 9134af75-a42d-4279-a846-77ef6ca885e8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: q_z1yEJ5-vtzVrlwtQqIOtvKMSzLgjhhoHfgKqp2JpA
+name: Category
+vid: category
+description: 'Use <em>Category</em> to group similar contents under a particular topic using.'
+weight: 0

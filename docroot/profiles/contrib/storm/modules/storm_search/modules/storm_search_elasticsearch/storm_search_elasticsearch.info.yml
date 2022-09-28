@@ -1,0 +1,11 @@
+name: Storm search - Elasticsearch
+type: module
+description: "Provides integration of Search API with Elasticsearch."
+version: VERSION
+core_version_requirement: ^8.8 || ^9
+package: Storm
+dependencies:
+  - storm:storm_search
+  - elasticsearch_connector:elasticsearch_connector
+  - elasticsearch_connector:elasticsearch_connector_views
+  - facets:facets

@@ -1,0 +1,23 @@
+uuid: 1ef38297-799a-4513-bd57-c4f58d41165a
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - views
+    - viewsreference
+_core:
+  default_config_hash: KDCNtJlaoY1j44ly6XeBFtpkozzidGcjO_LwXfr3lyk
+id: block_content.field_view
+field_name: field_view
+entity_type: block_content
+type: viewsreference
+settings:
+  target_type: view
+module: viewsreference
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

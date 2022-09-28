@@ -1,0 +1,41 @@
+.ui-accordion .storm-accordion-label.ui-accordion-header {
+  background-color: #fff;
+  color: #1b1b1d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 800;
+  border: 2px solid #1b1b1d;
+  text-transform: initial;
+}
+
+.ui-accordion .storm-accordion-label.ui-accordion-header.ui-state-active {
+  border-color: #1b1b1d;
+}
+
+.ui-accordion-header-icon.ui-icon,
+.ui-state-hover .ui-accordion-header-icon.ui-icon,
+.ui-state-focus .ui-accordion-header-icon.ui-icon,
+.storm-accordion-label.ui-state-default .ui-icon {
+  background-image: url("../../assets/drop.svg");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  float: right;
+  order: 2;
+  margin-right: 20px;
+}
+
+.ui-accordion-header-icon.ui-icon {
+  transform: rotate(-90deg);
+}
+
+.ui-state-active .ui-accordion-header-icon.ui-icon {
+  background-image: url("../../assets/drop.svg");
+  transform: rotate(0deg);
+}
+
+.ui-accordion .storm-accordion-pane-content.ui-accordion-content {
+  border: 2px solid #1b1b1d;
+  border-top: none;
+}

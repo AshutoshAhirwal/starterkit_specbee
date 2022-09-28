@@ -1,0 +1,9 @@
+uuid: 3f0cf6d8-fe00-4091-b23e-80c17cc66f02
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Ei5aASmDSAQLA1JWBHMzmCQT476IPZkBDXzTBCtA80s
+id: component
+label: Component
+weight: null

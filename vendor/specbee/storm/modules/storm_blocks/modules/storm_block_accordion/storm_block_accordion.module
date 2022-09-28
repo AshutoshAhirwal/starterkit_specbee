@@ -1,0 +1,53 @@
+<?php
+
+/**
+ * @file
+ * Provides an Accordion block component.
+ */
+
+use Drupal\block_content\BlockContentInterface;
+
+/**
+ * Implements hook_theme_registry_alter().
+ */
+function storm_block_accordion_theme_registry_alter(&$theme_registry) {
+  $module_path = \Drupal::service('extension.list.module')->getPath('storm_block_accordion');
+
+  $base_hooks = [
+    'field' => [
+      'registry' => 'field__block_content__field_accordion_items__accordion',
+      'template' => 'field--block-content--field-accordion-items--accordion',
+    ],
+    'paragraph' => [
+      'registry' => 'paragraph__accordion_item__default',
+      'template' => 'paragraph--accordion-item--default',
+    ],
+    'block' => [
+      'registry' => 'block__accordion',
+      'template' => 'block--accordion',
+    ],
+  ];
+
+  foreach ($base_hooks as $base_hook => $theme) {
+    $theme_registry[$theme['registry']] = [
+      'path' => $module_path . '/templates',
+      'template' => $theme['template'],
+      'render element' => $theme_registry[$base_hook]['render element'],
+      'base hook' => $base_hook,
+      'type' => 'module',
+      'theme path' => $module_path,
+      'preprocess functions' => $theme_registry[$base_hook]['preprocess functions'],
+    ];
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function storm_block_accordion_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+   $element = $variables['elements'];
+  // Block suggestions for custom block bundles.
+  if (isset($element['content']['#block_content'])) {
+    array_splice($suggestions, 1, 0, 'block__' . $element['content']['#block_content']->bundle());
+  }
+}

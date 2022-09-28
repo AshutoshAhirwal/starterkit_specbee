@@ -1,0 +1,28 @@
+/**
+ * @file
+ * Stylesheet 2 column layout sections.
+ */
+
+@media screen and (min-width: 40em) {
+  .l-grid.l-grid--25-50-25 > .l-grid__item--first,
+  .l-grid.l-grid--25-50-25 > .l-grid__item--third,
+  .l-grid.l-grid--25-25-50 > .l-grid__item--first,
+  .l-grid.l-grid--25-25-50 > .l-grid__item--second,
+  .l-grid.l-grid--50-25-25 > .l-grid__item--second,
+  .l-grid.l-grid--50-25-25 > .l-grid__item--third {
+    flex: 0 1 calc(25% - 0.675em);
+  }
+  .l-grid.l-grid--25-50-25 > .l-grid__item--second,
+  .l-grid.l-grid--25-25-50 > .l-grid__item--third,
+  .l-grid.l-grid--50-25-25 > .l-grid__item--first {
+    flex: 0 1 calc(50% - 0.675em);
+  }
+  .l-grid.l-grid--33-34-33 > .l-grid__item--first,
+  .l-grid.l-grid--33-34-33 > .l-grid__item--third {
+    flex: 0 1 calc(33% - 0.675em);
+  }
+  .l-grid.l-grid--33-34-33 > .l-grid__item--second {
+    flex: 0 1 calc(34% - 0.675em);
+  }
+}
+

@@ -1,0 +1,10 @@
+name: Storm search
+type: module
+description: "Provides integration of Drupal and Search API."
+version: VERSION
+core_version_requirement: ^8.8 || ^9
+package: Storm
+dependencies:
+  - search_api:search_api
+  - search_api:search_api_db
+  - facets:facets

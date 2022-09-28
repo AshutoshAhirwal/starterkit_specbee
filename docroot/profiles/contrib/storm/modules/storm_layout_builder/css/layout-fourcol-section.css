@@ -1,0 +1,11 @@
+/**
+ * @file
+ * Stylesheet 2 column layout sections.
+ */
+
+@media screen and (min-width: 40em) {
+  .l-container--fourcol .l-grid > .l-grid__item {
+    flex: 0 1 calc(25% - 0.5em);
+  }
+}
+

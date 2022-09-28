@@ -1,0 +1,35 @@
+uuid: c9c7744a-f218-4d79-9543-7276956c4dec
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta_button
+    - field.field.block_content.cta_button.field_cta_button_type
+    - field.field.block_content.cta_button.field_cta_link
+  module:
+    - link
+_core:
+  default_config_hash: Ugtik0_AnsDmOWOpob2oM58urV7wHpjZdhNtLetTDxA
+id: block_content.cta_button.default
+targetEntityType: block_content
+bundle: cta_button
+mode: default
+content:
+  field_cta_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_cta_button_type: true
+  search_api_excerpt: true

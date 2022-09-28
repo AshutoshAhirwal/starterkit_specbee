@@ -1,0 +1,36 @@
+uuid: 2b5e56c8-2f79-48ea-b68b-59324601012e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.accordion
+    - field.storage.block_content.field_accordion_items
+    - paragraphs.paragraphs_type.accordion_item
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: xhZGqrmHSkI2T8dxG7X4cPmjNUJM18ORkxkLx8RbHSk
+id: block_content.accordion.field_accordion_items
+field_name: field_accordion_items
+entity_type: block_content
+bundle: accordion
+label: Items
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      accordion_item: accordion_item
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_item:
+        weight: 3
+        enabled: true
+      accordion_items:
+        weight: 2
+        enabled: false
+field_type: entity_reference_revisions

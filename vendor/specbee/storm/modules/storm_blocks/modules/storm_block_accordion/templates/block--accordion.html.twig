@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display an accordion block.
+ */
+#}
+{%
+  set classes = [
+  'block',
+  'block--' ~ configuration.provider|clean_class,
+  'block--' ~ plugin_id|clean_class,
+  'block--storm-accordion'
+]
+%}
+
+{{ attach_library('storm_block_accordion/accordion') }}
+<div{{attributes.addClass(classes)}}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{title_attributes}}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</div>

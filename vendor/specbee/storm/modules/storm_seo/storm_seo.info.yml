@@ -1,0 +1,20 @@
+name: Storm SEO
+type: module
+description: "Provides SEO enhancements."
+version: VERSION
+core_version_requirement: ^8.8 || ^9
+package: Storm
+dependencies:
+  - google_analytics:google_analytics
+  - linkchecker:linkchecker
+  - metatag:metatag
+  - metatag:metatag_facebook
+  - metatag:metatag_open_graph
+  - metatag:metatag_twitter_cards
+  - metatag:metatag_views
+  - pathauto:pathauto
+  - redirect:redirect
+  - robotstxt:robotstxt
+  - seo_checklist:seo_checklist
+  - xmlsitemap:xmlsitemap
+  - yoast_seo:yoast_seo

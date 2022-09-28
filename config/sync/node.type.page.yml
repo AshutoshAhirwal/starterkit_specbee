@@ -1,0 +1,20 @@
+uuid: 9276f326-77d3-43b6-80fe-cd61e7e19723
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: IxLOoA5YP8te9Xi7DcABkKavBatx3TW7tLSeuGRSQig
+name: 'Basic Page'
+type: page
+description: 'Use <em>basic pages</em> for your static content, such as a ''''Privacy Policy'''' page.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

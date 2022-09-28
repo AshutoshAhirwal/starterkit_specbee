@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Tags - Media'
+vid: tags_media
+description: 'Use tags to group Media items on similar topics into categories.'
+weight: 0

@@ -1,0 +1,22 @@
+uuid: bc7f307f-29f1-4663-a29c-f397ec1e0051
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_library
+    - node
+_core:
+  default_config_hash: jXjWHFSHVTqGp7B8GjIMbW88bQrZOTvfZ9iRj8Mo3-I
+id: node.layout_selection
+field_name: layout_selection
+entity_type: node
+type: entity_reference
+settings:
+  target_type: layout
+module: core
+locked: true
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

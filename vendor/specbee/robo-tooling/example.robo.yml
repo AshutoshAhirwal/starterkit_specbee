@@ -1,0 +1,82 @@
+# This file contains the site cofigurations used during project setup which will be executed
+# by running `composer init-repo`. Any changes made to the file will require the command
+# to be executed again. Lando containers might needs a rebuild as well based on the changes
+# being done.
+project:
+  php: "8.0"
+  machine_name: specbee
+  # Used for enforcing git commit message.
+  prefix: SB
+  human_name: "Specbee"
+  git:
+    remote: git@bitbucket.org:specbee/project-repo.git
+
+# Configure the installation profile and the theme being used in the site.
+drupal:
+  webroot: web
+  profile: standard
+  # Configure the database credentials for site install.
+  database:
+    host: database
+    driver: mysql
+    creds:
+      user: drupal
+      password: drupal
+      database: drupal
+  # Configure the theme path and build commands. Make it an empty string if there is
+  # command available for a step and that will be skipped.
+  theme:
+    path: ${drupal.webroot}/themes/custom/theme
+    build: npm install
+    compile: npm sass-compile
+    lint: npm lint
+  # Configure the admin account details
+  account:
+    name: webadmin
+    mail: no-reply@specbee.in
+  config:
+    path: 'config/sync'
+
+# Configure PHPCS settings & options.
+phpcs:
+  code_paths:
+    - ${drupal.webroot}/modules/custom
+    - ${drupal.webroot}/themes/custom
+  check_extensions:
+    - php
+    - module
+    - inc
+    - install
+    - test
+    - profile
+    - theme
+    - info
+    - txt
+  ignore_paths:
+    - ${drupal.webroot}/themes/*/dist/
+    - ${drupal.webroot}/themes/*/node_modules
+  standards:
+    - Drupal
+    - DrupalPractice
+
+# Configure Behat & PHPUnit test settings.
+tests:
+  behat:
+    config: tests/behat/behat.yml
+    dir: tests/behat
+    path: ${tests.behat.dir}
+    tags: ''
+  phpunit:
+    config: tests/phpunit/phpunit.xml
+    dir: tests/phpunit
+
+# Configure the flags for security update checks.
+security:
+  check:
+    drupal: true
+    composer: true
+
+# Specify from where the database and files should be synced from.
+sync:
+  remote: "dev"
+  sanitize: true

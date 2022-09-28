@@ -1,0 +1,33 @@
+{
+    "name": "specbee/robo-tooling",
+    "type": "library",
+    "description": "Robo commands for use to setup, build, test and deploy Drupal projects.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Malabya",
+            "email": "malabya@specbee.com"
+        }
+    ],
+    "require": {
+        "consolidation/robo": "^3.0",
+        "drush-ops/behat-drush-endpoint": "^9.4",
+        "drush/drush": "^11",
+        "webflo/drupal-finder": "^1.2",
+        "grasmash/yaml-cli": "^2.0"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "Specbee\\DevSuite\\": "src"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "phpstan/extension-installer": false
+        }
+    }
+}

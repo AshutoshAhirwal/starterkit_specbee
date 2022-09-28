@@ -1,0 +1,33 @@
+uuid: 8122d49f-05e0-46b4-b3b0-b5c048217c2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.content_reference
+    - field.field.block_content.content_reference.field_content_reference
+    - field.field.block_content.content_reference.field_display_mode
+_core:
+  default_config_hash: AgD6Mn_qGwo_iZaxeoDsfq50rtgIZ_RAT0l3KlYFDfA
+id: block_content.content_reference.default
+targetEntityType: block_content
+bundle: content_reference
+mode: default
+content:
+  field_content_reference:
+    type: entity_reference_autocomplete
+    weight: 26
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_display_mode:
+    type: options_select
+    weight: 27
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  info: true

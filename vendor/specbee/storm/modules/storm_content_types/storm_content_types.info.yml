@@ -1,0 +1,16 @@
+name: Storm content type
+type: module
+description: "Provides basic content types with Storm."
+version: VERSION
+core_version_requirement: ^8.8 || ^9
+package: Storm
+dependencies:
+  - drupal:link
+  - drupal:media
+  - drupal:node
+  - drupal:taxonomy
+  - field_group:field_group
+  - metatag:metatag
+  - yoast_seo:yoast_seo
+
+

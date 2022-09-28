@@ -1,0 +1,13 @@
+uuid: 14dcfff5-6ac1-456b-96ec-a5c1f275deac
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: QzRbwRx5U3SQlgMmXZLdUvIoW_WA1e1nxzliEge1sa0
+id: block_reference
+block_id: 'inline_block:block_reference'
+category: component
+label: 'Block reference'
+weight: -100
+image_path: /profiles/contrib/storm/modules/storm_layout_builder/assets/block.png
+image_alt: 'Block reference Icon'

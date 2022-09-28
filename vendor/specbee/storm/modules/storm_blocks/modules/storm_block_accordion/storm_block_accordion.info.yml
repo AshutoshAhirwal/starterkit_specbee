@@ -1,0 +1,11 @@
+name: 'Storm block - Accordion'
+description: 'Provides an Accordion block type and widget to place in a Layout Builder.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+package: Storm
+dependencies:
+  - storm_blocks:storm_blocks
+  - entity_reference_revisions:entity_reference_revisions
+  - jquery_ui_accordion:jquery_ui_accordion
+  - paragraphs:paragraphs
+  - twig_field_value:twig_field_value

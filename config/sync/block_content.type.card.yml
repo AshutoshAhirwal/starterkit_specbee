@@ -1,0 +1,10 @@
+uuid: 80c4251e-20c0-41bf-b66d-d7d1eefd10e2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2zgyRkDpAzIaYLNbXLEXlMpXqU3qcgSKBu_i3MKhTak
+id: card
+label: Card
+revision: 0
+description: 'Use <em>card component</em> to display an internal content/information or external content.'

@@ -1,0 +1,24 @@
+storm.settings:
+  path: '/admin/config/system/storm'
+  defaults:
+    _title: 'Storm configurations'
+    _controller: '\Drupal\storm\Controller\StormConfigurationController::build'
+  requirements:
+    _permission: 'administer storm configuration'
+
+storm.layout_builder.style_settings:
+  path: '/admin/config/system/storm/layout-builder/styles'
+  defaults:
+    _title: 'Storm Layout builder Styles'
+    _form: 'Drupal\storm\Form\StormLayoutBuilderStyleSettingsForm'
+  requirements:
+    _permission: 'administer storm configuration'
+
+
+storm.cta_button.types:
+  path: '/admin/config/system/storm/cta-button/types'
+  defaults:
+    _title: 'CTA Button Types'
+    _form: 'Drupal\storm\Form\StormCtaButtonTypeValuesForm'
+  requirements:
+    _permission: 'administer storm configuration'

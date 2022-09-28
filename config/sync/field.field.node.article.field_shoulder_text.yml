@@ -1,0 +1,23 @@
+uuid: edd0845b-bea7-4716-a73e-db05f035a502
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shoulder_text
+    - node.type.article
+  module:
+    - text
+_core:
+  default_config_hash: 4FBc0p6rAmF1TVaFvLImA0c_jF_Gxio3ZXHI2u27YVo
+id: node.article.field_shoulder_text
+field_name: field_shoulder_text
+entity_type: node
+bundle: article
+label: 'Shoulder text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

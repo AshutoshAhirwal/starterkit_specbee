@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: storm_long_date
+label: 'Storm long date'
+locked: false
+pattern: 'l, d F, Y h:i A'

@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.content_reference
+    - field.field.block_content.content_reference.field_content_reference
+    - field.field.block_content.content_reference.field_display_mode
+id: block_content.content_reference.default
+targetEntityType: block_content
+bundle: content_reference
+mode: default
+content:
+  field_content_reference:
+    type: entity_reference_autocomplete
+    weight: 26
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_display_mode:
+    type: options_select
+    weight: 27
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  info: true

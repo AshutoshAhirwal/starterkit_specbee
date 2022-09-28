@@ -1,0 +1,27 @@
+uuid: 5cc25029-5d49-4077-93c6-41590a1e6f15
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_reference
+    - field.field.block_content.block_reference.field_block_reference
+  module:
+    - block_field
+_core:
+  default_config_hash: vCF3kj1W3ZQatx89VzC3FqNpm6uKewPeR-RhFxlZ8v8
+id: block_content.block_reference.default
+targetEntityType: block_content
+bundle: block_reference
+mode: default
+content:
+  field_block_reference:
+    type: block_field_default
+    weight: 0
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+hidden:
+  info: true

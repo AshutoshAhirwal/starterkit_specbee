@@ -1,0 +1,16 @@
+uuid: 6739280a-2d42-4a90-9a7b-d44dd3a5624f
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+_core:
+  default_config_hash: H1xBsLZYv27kPgRUh1aEuBu8Xw3NEOd_ZQsY0ahA-Do
+id: storm_search_db
+name: 'Storm search - DB'
+description: 'A search server with DB indexing'
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: words

@@ -1,0 +1,8 @@
+name: 'Storm block - Media'
+description: 'Provides a Media block type to add Image and Video media entities.'
+type: module
+package: Storm
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - storm_blocks:storm_blocks
+  - storm_media:storm_media
